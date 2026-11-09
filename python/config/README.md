@@ -1,0 +1,3 @@
+# Config
+
+Arquivos de configuração.

@@ -25,6 +25,8 @@ const CATEGORIAS = {
 
     "Instrumentos": "🎸",
 
+    "Playback": "▶️",
+
     "FX": "✨",
 
     "Cenas": "🎚"
@@ -182,6 +184,24 @@ const PRESETS = [
         descricao: "Preset para cajón.",
 
         arquivo: "../../docs/presets/instrumentos/cajon.md"
+
+    },
+
+    // ======================================================
+    // PLAYBACK
+    // ======================================================
+
+    {
+
+        id: "mp3",
+
+        categoria: "Playback",
+
+        nome: "Reprodução MP3",
+
+        descricao: "Reprodução de hinos, trilhas e playbacks.",
+
+        arquivo: "../../docs/presets/playback/mp3.md"
 
     }
 

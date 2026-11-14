@@ -1,157 +1,189 @@
-# Preset - Cajón
-
-> Instrumento da Igreja Presbiteriana de Piracicaba
-
----
-
-# Instrumento
-
-- **Tipo:** Cajón acústico
-- **Captação:** Captador interno (Piezo)
-- **Saída:** P10
-- **Uso:** Base rítmica do louvor
+# Preset — Cajón
+Categoria: Percussão
+Mesa: Soundcraft Ui24R
+Versão: 1.0
 
 ---
 
-# Configuração do Instrumento
-
-## Volume
-
-- **100%**
-
-## Equalizador do Cajón
-
-Caso exista equalizador no pré-amplificador:
-
-| Controle | Ajuste |
-|----------|--------|
-| Bass | Centro |
-| Middle | Centro |
-| Treble | Centro |
-
-A equalização principal será realizada na Ui24R.
-
----
-
-# Ui24R
-
-## 🟢 Gain
-
-Regular para que os picos fiquem entre:
-
-- **-18 dB**
-- **-12 dB**
-
-Nunca deixar clipar.
-
----
-
-## 🔵 HPF
+# Entrada
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **50 Hz** |
-| Inclinação | **12 dB/oitava** |
+| Phantom Power | OFF |
+| Polaridade | Normal |
+| Delay | 0 ms |
+| Gain (Pré) | Ajustar para picos entre -12 dB e -6 dB no medidor (referência inicial: +14 dB) |
+| Fader | 0 dB (Unidade) |
 
-Remove apenas subgraves desnecessários.
+> **Importante:** O ganho deve ser ajustado conforme o microfone utilizado e a intensidade do percussionista. O valor de +14 dB é apenas uma referência inicial.
 
 ---
 
-# 🟡 Equalizador
+# Filtros
 
-### 🟡 Banda 1 — Grave
+| Filtro | Valor |
+|--------|------:|
+| HPF | 50 Hz / 12 dB/Oct |
+| LPF | 18,2 kHz / 12 dB/Oct |
+
+---
+
+# Equalizador (EQ)
+
+### Banda HPF (Azul)
+- Frequência: **50 Hz**
+- Inclinação: **12 dB/Oct**
+
+### Banda 1 (Verde)
+- Frequência: **80 Hz**
+- Ganho: **+1 dB**
+- Q: **0,8**
+
+Objetivo:
+Adicionar corpo e peso ao grave do cajón sem embolar o PA.
+
+---
+
+### Banda 2 (Vermelha)
+
+- Frequência: **220 Hz**
+- Ganho: **-2 dB**
+- Q: **1,2**
+
+Objetivo:
+Reduzir o som "abafado" e a ressonância da caixa.
+
+---
+
+### Banda 3 (Roxa)
+
+- Frequência: **2 kHz**
+- Ganho: **+2 dB**
+- Q: **1,0**
+
+Objetivo:
+Realçar o ataque das mãos e melhorar a definição.
+
+---
+
+### Banda 4 (Amarela)
+
+- Frequência: **5 kHz**
+- Ganho: **+1 dB**
+- Q: **1,0**
+
+Objetivo:
+Adicionar presença e clareza sem deixar o instrumento agressivo.
+
+---
+
+### LPF (Laranja)
+
+- Frequência: **18,2 kHz**
+- Inclinação: **12 dB/Oct**
+
+Objetivo:
+Eliminar ruídos extremamente agudos que não contribuem musicalmente.
+
+---
+
+# Gate (dbx)
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **80 Hz** |
-| Ganho | **+2 dB** |
-| Q | **0,8** |
+| Threshold | -48,2 dB |
+| Attack | 5 ms |
+| Hold | 61 ms |
+| Release | 182 ms |
+| Depth | -18,1 dB |
 
-Realça o "bumbo" do cajón.
+Objetivo:
+
+- reduzir vazamento do palco;
+- diminuir risco de microfonia;
+- preservar o sustain natural do cajón;
+- evitar abertura e fechamento excessivos do gate.
 
 ---
 
-### 🟠 Banda 2 — Madeira
+# Compressor (dbx)
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **220 Hz** |
-| Ganho | **-3 dB** |
-| Q | **1,2** |
+| Threshold | -20,1 dB |
+| Ratio | 3,1:1 |
+| Attack | 18 ms |
+| Release | 181 ms |
+| Makeup Gain | +1,9 dB |
+| Knee | Soft Knee |
 
-Reduz a ressonância da caixa de madeira.
+Objetivo:
 
----
-
-### 🟢 Banda 3 — Ataque
-
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **2,8 kHz** |
-| Ganho | **+2 dB** |
-| Q | **1,0** |
-
-Melhora a definição das batidas.
+- controlar os picos;
+- manter o ataque natural;
+- aumentar a consistência do volume;
+- evitar saturação do PA.
 
 ---
 
-### 🔴 Banda 4 — Estalos
+# AUX Sends
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **5 kHz** |
-| Ganho | **+1 dB** |
-| Q | **0,8** |
+## PA (L/R)
 
-Realça os estalos sem exagerar.
+Canal enviado normalmente para o Master.
 
 ---
 
-## 🟣 LPF
+## Monitor de Palco
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **12 kHz** |
+Enviar conforme necessidade do percussionista.
 
----
+Recomendação inicial:
 
-# 🟠 Compressor
+| Mix | Nível |
+|------|------:|
+| Cajón | 0 dB |
+| Baixo | -6 dB |
+| Violão | -8 dB |
+| Teclado | -10 dB |
+| Voz Principal | -5 dB |
+| Demais Vozes | -10 dB |
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Threshold | **-18 dB** |
-| Ratio | **3:1** |
-| Attack | **15 ms** |
-| Release | **150 ms** |
-| Makeup Gain | **0 dB** |
-
-Mantém as batidas equilibradas durante toda a execução.
+Ajustar durante o ensaio conforme preferência do músico.
 
 ---
 
-# 🟤 Gate
+# FX Sends
 
-**Desligado (OFF).**
+Reverb:
+- OFF
 
-Como a captação é direta, normalmente não há necessidade de gate.
+Delay:
+- OFF
 
----
-
-# 🎚️ Fader
-
-Iniciar em:
-
-**0 dB**
-
-Ajustar conforme a mixagem.
+O cajón normalmente não necessita efeitos.
 
 ---
 
 # Observações
 
-- Preset desenvolvido para cajón com captação interna.
-- O reforço em **80 Hz** destaca o grave das batidas centrais.
-- O corte em **220 Hz** reduz a ressonância da madeira.
-- O ganho em **2,8 kHz** melhora a definição dos ataques.
-- O reforço em **5 kHz** acrescenta brilho às batidas mais agudas.
-- Ajustar sempre o ganho antes do culto ou ensaio.
+Características esperadas deste preset:
+
+- grave firme;
+- médio limpo;
+- ataque definido;
+- pouco vazamento;
+- boa presença na mix;
+- dinâmica preservada;
+- excelente para igrejas de pequeno e médio porte.
+
+---
+
+# Ajustes Finais
+
+Durante a passagem de som:
+
+- Ajustar o **Gain** para que os picos fiquem entre **-12 dB e -6 dB**.
+- Manter o **Fader do canal em 0 dB** como ponto de partida.
+- Realizar o balanceamento do instrumento na mix utilizando o **fader**, e não o ganho.
+- Revisar os envios dos monitores conforme a necessidade do percussionista.

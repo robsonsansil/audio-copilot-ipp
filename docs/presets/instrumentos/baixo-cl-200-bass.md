@@ -1,85 +1,63 @@
-# Preset - Baixo C.L. 200 Bass
+# Preset — Baixo CL-200 (Ativo 9V)
 
-> Instrumento da Igreja Presbiteriana de Piracicaba
-
----
-
-# Instrumento
-
-- **Marca:** C.L. (Guitars by Leo)
-- **Modelo:** 200 Bass
-- **Tipo:** Baixo elétrico passivo
-- **Cordas:** 4
-- **Captadores:** 2 × Single Coil (Jazz Bass)
+Categoria: Cordas
+Mesa: Soundcraft Ui24R
+Versão: 2.0
 
 ---
 
-# Configuração do instrumento
+# Entrada
 
-## Volume
+| Parâmetro | Valor |
+|-----------|------:|
+| Phantom Power | OFF |
+| Hi-Z | OFF (utilizando Direct Box) |
+| Polaridade | Normal |
+| Delay | 0 ms |
+| Gain (Pré) | Ajustar para picos entre -12 dB e -6 dB (referência inicial: +4 dB) |
+| Fader | 0 dB (Unidade) |
 
-- Captador do braço: **100%**
-- Captador da ponte: **100%**
+> O ganho deve ser ajustado durante a passagem de som.
 
-## Tone
+---
 
-- **80% aberto**
+# Filtros
 
-Essa regulagem produz um timbre equilibrado, com boa definição e sem excesso de brilho.
+| Filtro | Valor |
+|--------|------:|
+| 🔵 HPF | 40 Hz / 12 dB/Oct |
+| 🟠 LPF | 8 kHz / 12 dB/Oct |
 
 ---
 
-# Ui24R
-
-## 🟢 Gain
-
-Regular para que os picos fiquem entre:
-
-- **-18 dB**
-- **-12 dB**
-
-Nunca deixar clipar.
-
----
+# Equalizador (EQ)
 
 ## 🔵 HPF
 
 | Parâmetro | Valor |
 |-----------|------:|
 | Frequência | **40 Hz** |
-| Inclinação | **12 dB/oitava** |
+| Inclinação | **12 dB/Oct** |
 
-Remove apenas subgraves que não contribuem para o som.
-
----
-
-## 🟡 Equalizador
-
-### 🟡 Banda 1 — Graves
-
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **60 Hz** |
-| Ganho | **+2 dB** |
-| Q | **0,8** |
-
-Adiciona peso ao instrumento.
+Objetivo:
+Eliminar frequências abaixo da faixa útil do instrumento.
 
 ---
 
-### 🟠 Banda 2 — Corpo
+## 🟢 Banda 1 — Graves
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **120 Hz** |
+| Frequência | **80 Hz** |
 | Ganho | **+1 dB** |
 | Q | **0,8** |
 
-Deixa o baixo mais cheio sem embolar.
+Objetivo:
+Adicionar peso sem competir com o subwoofer.
 
 ---
 
-### 🟢 Banda 3 — Médios baixos
+## 🔴 Banda 2 — Médio-Graves
 
 | Parâmetro | Valor |
 |-----------|------:|
@@ -87,80 +65,132 @@ Deixa o baixo mais cheio sem embolar.
 | Ganho | **-3 dB** |
 | Q | **1,2** |
 
-Remove o excesso de médios graves.
+Objetivo:
+Eliminar excesso de médios graves.
 
 ---
 
-### 🔵 Banda 4 — Definição
+## 🟣 Banda 3 — Presença
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **800 Hz** |
-| Ganho | **+2 dB** |
+| Frequência | **900 Hz** |
+| Ganho | **+1,5 dB** |
 | Q | **1,0** |
 
-Melhora a inteligibilidade das notas.
+Objetivo:
+Melhorar definição das notas.
 
 ---
 
-### 🔴 Banda 5 — Ataque
+## 🟡 Banda 4 — Ataque
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **2,2 kHz** |
+| Frequência | **2,5 kHz** |
 | Ganho | **+1 dB** |
-| Q | **0,8** |
+| Q | **1,0** |
 
-Realça o ataque dos dedos.
+Objetivo:
+Realçar o ataque dos dedos.
 
 ---
 
-## 🟣 LPF
+## 🟠 LPF
 
 | Parâmetro | Valor |
 |-----------|------:|
 | Frequência | **8 kHz** |
+| Inclinação | **12 dB/Oct** |
 
-Elimina apenas ruídos de alta frequência.
+Objetivo:
+Eliminar ruídos de alta frequência.
 
 ---
 
-# 🟠 Compressor
+# 🟤 Gate (dbx)
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Threshold | **-22 dB** |
-| Ratio | **3:1** |
-| Attack | **25 ms** |
-| Release | **180 ms** |
-| Makeup Gain | **0 dB** |
+| Threshold | -60 dB |
+| Attack | 10 ms |
+| Hold | 100 ms |
+| Release | 250 ms |
+| Depth | -10 dB |
 
-Objetivo: manter um volume consistente durante toda a execução.
+### Objetivo
 
----
-
-# 🟤 Gate
-
-**Desligado.**
-
-Não utilizar gate neste instrumento.
+- reduzir ruído do circuito ativo;
+- preservar o sustain;
+- evitar abertura e fechamento excessivos.
 
 ---
 
-# 🎚️ Fader
+# 🟠 Compressor (dbx)
 
-Manter próximo de:
+| Parâmetro | Valor |
+|-----------|------:|
+| Threshold | -18 dB |
+| Ratio | 3:1 |
+| Attack | 25 ms |
+| Release | 220 ms |
+| Makeup Gain | +1 dB |
+| Knee | Soft Knee |
 
-**0 dB**
+### Objetivo
 
-Ajustar conforme a necessidade da mixagem.
+- nivelar a dinâmica;
+- controlar picos;
+- manter o grave firme;
+- preservar o ataque.
 
 ---
 
-# Observações
+# 🎚️ AUX Sends
 
-- Este preset foi desenvolvido especificamente para o **baixo C.L. 200 Bass** utilizado na Igreja Presbiteriana de Piracicaba.
-- A equalização privilegia um som definido, encorpado e bem presente na mix, sem competir com o bumbo.
-- Caso o músico utilize palheta, pode ser necessário reduzir levemente a banda de **2,2 kHz**.
-- Sempre regular o ganho antes de iniciar o culto ou ensaio.
-```
+## PA
+
+Enviar normalmente para o LR.
+
+## Monitor
+
+| Fonte | Nível |
+|--------|------:|
+| Baixo | 0 dB |
+| Cajón | -5 dB |
+| Violão | -8 dB |
+| Teclado | -10 dB |
+| Voz Principal | -6 dB |
+| Demais Vozes | -10 dB |
+
+---
+
+# ✨ FX
+
+Reverb: OFF
+
+Delay: OFF
+
+Chorus: OFF
+
+---
+
+# Característica Sonora
+
+Este preset busca um baixo com:
+
+- grave firme;
+- excelente definição;
+- médios limpos;
+- boa integração com o subwoofer;
+- sem competir com o cajón;
+- sustain natural.
+
+---
+
+# Ajustes Finais
+
+- Regular o Gain para picos entre **-12 dB e -6 dB**.
+- Manter o Fader em **0 dB**.
+- Balancear a mix utilizando apenas o fader.
+- Se houver excesso de grave, reduzir primeiro a **🟢 Banda 1 (80 Hz)** antes de diminuir o volume geral do canal.

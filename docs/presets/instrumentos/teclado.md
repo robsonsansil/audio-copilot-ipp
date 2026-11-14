@@ -1,160 +1,226 @@
-# Preset - Teclado
+# Preset — Teclado
 
-> Instrumento da Igreja Presbiteriana de Piracicaba
-
----
-
-# Instrumento
-
-- **Tipo:** Teclado eletrônico
-- **Conexão:** Saída P10 L/R (Mono ou Stereo)
-- **Uso:** Base harmônica do louvor
+Categoria: Instrumentos
+Mesa: Soundcraft Ui24R
+Versão: 2.0
 
 ---
 
-# Configuração do Instrumento
+# Entrada
 
-## Volume Master
+| Parâmetro | Valor |
+|-----------|------:|
+| Phantom Power | OFF |
+| Hi-Z | OFF |
+| Polaridade | Normal |
+| Delay | 0 ms |
+| Gain (Pré) | Ajustar para picos entre -12 dB e -6 dB (referência inicial: +2 dB) |
+| Fader | 0 dB (Unidade) |
 
-- Aproximadamente **80%**
+> Recomenda-se utilizar Direct Box estéreo (L/R). Caso utilize apenas uma saída, preferir a saída Left/Mono.
 
-Evita distorção na saída do instrumento e oferece boa margem para ajuste do ganho na mesa.
+---
+
+# Filtros
+
+| Filtro | Valor |
+|--------|------:|
+| 🔵 HPF | 70 Hz / 12 dB/Oct |
+| 🟠 LPF | 16 kHz / 12 dB/Oct |
 
 ---
 
-# Ui24R
-
-## 🟢 Gain
-
-Regular para que os picos fiquem entre:
-
-- **-18 dB**
-- **-12 dB**
-
-Nunca deixar clipar.
-
----
+# Equalizador (EQ)
 
 ## 🔵 HPF
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **50 Hz** |
-| Inclinação | **12 dB/oitava** |
+| Frequência | **70 Hz** |
+| Inclinação | **12 dB/Oct** |
 
-Remove apenas subgraves que competem com o baixo.
+Objetivo:
+
+Eliminar graves que pertencem ao baixo e ao subwoofer.
 
 ---
 
-# 🟡 Equalizador
-
-### 🟡 Banda 1 — Graves
+## 🟢 Banda 1 — Graves
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **80 Hz** |
-| Ganho | **-1 dB** |
+| Frequência | **120 Hz** |
+| Ganho | **-2 dB** |
 | Q | **0,8** |
 
-Evita excesso de graves.
+Objetivo:
+
+Evitar excesso de graves.
 
 ---
 
-### 🟠 Banda 2 — Médios Graves
+## 🔴 Banda 2 — Médio-Graves
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **250 Hz** |
+| Frequência | **350 Hz** |
 | Ganho | **-2 dB** |
 | Q | **1,2** |
 
-Reduz o acúmulo de frequências que deixam a mixagem pesada.
+Objetivo:
+
+Reduzir o som "embolado".
 
 ---
 
-### 🟢 Banda 3 — Presença
+## 🟣 Banda 3 — Presença
 
 | Parâmetro | Valor |
 |-----------|------:|
 | Frequência | **2,5 kHz** |
-| Ganho | **+1 dB** |
+| Ganho | **+1,5 dB** |
 | Q | **1,0** |
 
-Melhora a definição sem competir com as vozes.
+Objetivo:
+
+Melhorar definição sem competir com as vozes.
 
 ---
 
-### 🔴 Banda 4 — Brilho
+## 🟡 Banda 4 — Brilho
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **8 kHz** |
+| Frequência | **6 kHz** |
 | Ganho | **+1 dB** |
 | Q | **0,8** |
 
-Acrescenta brilho moderado.
+Objetivo:
+
+Adicionar clareza.
 
 ---
 
-## 🟣 LPF
+## 🟠 LPF
 
 | Parâmetro | Valor |
 |-----------|------:|
 | Frequência | **16 kHz** |
+| Inclinação | **12 dB/Oct** |
+
+Objetivo:
+
+Eliminar ruídos extremamente agudos.
 
 ---
 
-# 🟠 Compressor
+# 🟤 Gate (dbx)
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Threshold | **-20 dB** |
-| Ratio | **2:1** |
-| Attack | **20 ms** |
-| Release | **150 ms** |
-| Makeup Gain | **0 dB** |
+| Threshold | OFF |
+| Attack | — |
+| Hold | — |
+| Release | — |
+| Depth | — |
 
-Apenas controla eventuais picos.
+### Objetivo
 
----
+Não utilizar Gate.
 
-# 🟤 Gate
-
-**Desligado (OFF).**
-
-Instrumentos eletrônicos normalmente não necessitam de gate.
+O teclado possui saída de linha e praticamente não apresenta vazamentos ou ruídos que justifiquem sua utilização.
 
 ---
 
-# 🎚️ Fader
+# 🟠 Compressor (dbx)
 
-Iniciar em:
+| Parâmetro | Valor |
+|-----------|------:|
+| Threshold | -15 dB |
+| Ratio | 2:1 |
+| Attack | 20 ms |
+| Release | 150 ms |
+| Makeup Gain | 0 dB |
+| Knee | Soft Knee |
 
-**0 dB**
+### Objetivo
 
-Ajustar conforme a mixagem.
+- suavizar picos;
+- manter dinâmica natural;
+- evitar compressão excessiva.
 
 ---
 
-# Pan
+# 🎚️ AUX Sends
 
-## Ligação Mono
+## PA
 
-- Pan central.
+Enviar normalmente para o LR.
 
-## Ligação Stereo
+---
 
-- Canal L: 100% Esquerda.
-- Canal R: 100% Direita.
+## Monitor
+
+| Fonte | Nível |
+|--------|------:|
+| Teclado | 0 dB |
+| Voz Principal | -4 dB |
+| Demais Vozes | -8 dB |
+| Violão | -8 dB |
+| Baixo | -10 dB |
+| Cajón | -12 dB |
+
+---
+
+# ✨ FX
+
+Reverb:
+OFF
+
+Delay:
+OFF
+
+O próprio teclado normalmente já possui efeitos internos.
+
+---
+
+# Característica Sonora
+
+Este preset busca:
+
+- piano definido;
+- pads suaves;
+- strings sem embolar;
+- boa inteligibilidade;
+- sem competir com as vozes;
+- excelente integração com o baixo e o cajón.
+
+---
+
+# Ajustes Finais
+
+- Regular o Gain para picos entre **-12 dB e -6 dB**.
+- Manter o Fader em **0 dB**.
+- Balancear a mix apenas pelo fader.
+- Se o teclado estiver excessivamente grave, reduzir primeiro a **🟢 Banda 1 (120 Hz)**.
+- Se estiver escondido na mix, aumentar levemente a **🟣 Banda 3 (2,5 kHz)** antes de aumentar o volume.
 
 ---
 
 # Observações
 
-- Preset desenvolvido para teclados eletrônicos em geral.
-- O teclado deve complementar o violão, sem competir com as vozes.
-- O HPF em **50 Hz** libera espaço para o baixo.
-- O corte em **250 Hz** reduz o excesso de médios graves na mixagem.
-- Caso o timbre seja piano, manter esta configuração.
-- Caso utilize pads, strings ou synths, pequenos ajustes podem ser necessários.
-- Regular sempre o ganho antes do culto ou ensaio.
+Este preset foi desenvolvido considerando:
+
+- Soundcraft Ui24R;
+- PA Dommer;
+- Subwoofer LL Audio;
+- Louvor congregacional da Igreja Presbiteriana de Piracicaba.
+
+Foi ajustado para trabalhar em conjunto com:
+
+- Baixo CL-200 (Ativo);
+- Violão Martin;
+- Cajón;
+- Vozes principais;
+
+mantendo uma mixagem equilibrada e natural.

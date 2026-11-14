@@ -1,171 +1,263 @@
-# Preset - Guitarra
+# Preset — Guitarra (Pedaleira)
 
-> Instrumento da Igreja Presbiteriana de Piracicaba
-
----
-
-# Instrumento
-
-- **Tipo:** Guitarra elétrica
-- **Captação:** Captadores da própria guitarra
-- **Processamento:** Pedaleira / Pedais de efeito
-- **Saída:** P10
-- **Uso:** Base harmônica, levadas e solos
+Categoria: Instrumentos
+Mesa: Soundcraft Ui24R
+Versão: 3.0
 
 ---
 
-# Configuração do Instrumento
+# Entrada
 
-## Volume da guitarra
+| Parâmetro | Valor |
+|-----------|------:|
+| Phantom Power | OFF |
+| Hi-Z | OFF |
+| Polaridade | Normal |
+| Delay | 0 ms |
+| Gain (Pré) | Ajustar para picos entre **-12 dB** e **-6 dB** (referência inicial: +2 dB) |
+| Fader | 0 dB (Unidade) |
 
-- **100%**
-
-## Tone
-
-- Ajustar conforme o timbre desejado pelo guitarrista.
-
-## Pedais
-
-O timbre principal deverá ser construído no set de pedais.
-
-A Ui24R será utilizada apenas para pequenos ajustes.
+> A maioria das pedaleiras modernas fornece sinal de linha. Evite excesso de ganho na Ui24R.
 
 ---
 
-# Ui24R
+# Configuração da Pedaleira
 
-## 🟢 Gain
+Recomendações:
 
-Regular para que os picos fiquem entre:
+- Simulação de gabinete: **ON**
+- Simulação de amplificador: **ON**
+- Saída: **Line**
+- IR (Impulse Response): **Ligado**
+- Noise Gate da pedaleira: **Ligado**
 
-- **-18 dB**
-- **-12 dB**
-
-Nunca permitir clipagem.
+A mesa deve apenas complementar o timbre.
 
 ---
+
+# Filtros
+
+| Filtro | Valor |
+|--------|------:|
+| 🔵 HPF | 90 Hz / 12 dB/Oct |
+| 🟠 LPF | 7 kHz / 12 dB/Oct |
+
+Objetivos:
+
+- eliminar graves desnecessários;
+- remover excesso de brilho digital;
+- aproximar o timbre de um amplificador real.
+
+---
+
+# Equalizador (EQ)
 
 ## 🔵 HPF
 
 | Parâmetro | Valor |
 |-----------|------:|
 | Frequência | **90 Hz** |
-| Inclinação | **12 dB/oitava** |
+| Inclinação | **12 dB/Oct** |
 
-Remove graves que pertencem ao baixo e ao cajón.
+Objetivo:
+
+Eliminar graves que pertencem ao baixo e ao cajón.
 
 ---
 
-# 🟡 Equalizador
-
-### 🟡 Banda 1 — Graves
+## 🟢 Banda 1 — Graves
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **150 Hz** |
+| Frequência | **180 Hz** |
 | Ganho | **-2 dB** |
-| Q | **0,8** |
+| Q | **1,0** |
 
-Limpa o excesso de graves.
+Objetivo:
+
+Evitar que a guitarra fique "gorda".
 
 ---
 
-### 🟠 Banda 2 — Médios
+## 🔴 Banda 2 — Médio-Graves
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **350 Hz** |
+| Frequência | **450 Hz** |
 | Ganho | **-2 dB** |
 | Q | **1,2** |
 
-Evita que a guitarra fique "embolada".
+Objetivo:
+
+Reduzir o som "abafado".
 
 ---
 
-### 🟢 Banda 3 — Presença
+## 🟣 Banda 3 — Presença
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **2,5 kHz** |
+| Frequência | **2,8 kHz** |
 | Ganho | **+2 dB** |
 | Q | **1,0** |
 
-Melhora a definição das levadas.
+Objetivo:
+
+Melhorar definição dos riffs e solos.
 
 ---
 
-### 🔴 Banda 4 — Brilho
+## 🟡 Banda 4 — Brilho
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **5 kHz** |
+| Frequência | **4,8 kHz** |
 | Ganho | **+1 dB** |
 | Q | **0,8** |
 
-Acrescenta brilho sem deixar o timbre agressivo.
+Objetivo:
+
+Adicionar brilho sem deixar o timbre estridente.
 
 ---
 
-## 🟣 LPF
+## 🟠 LPF
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Frequência | **10 kHz** |
+| Frequência | **7 kHz** |
+| Inclinação | **12 dB/Oct** |
 
-Elimina ruídos muito agudos dos pedais e da captação.
+Objetivo:
+
+Eliminar o excesso de agudos produzido pela pedaleira.
 
 ---
 
-# 🟠 Compressor
+# 🟤 Gate (dbx)
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Threshold | **-18 dB** |
-| Ratio | **2:1** |
-| Attack | **20 ms** |
-| Release | **120 ms** |
-| Makeup Gain | **0 dB** |
+| Threshold | OFF |
+| Attack | — |
+| Hold | — |
+| Release | — |
+| Depth | — |
 
-Compressão leve apenas para controlar picos.
+### Objetivo
+
+Não utilizar o Gate da Ui24R.
+
+A maioria das pedaleiras modernas já possui Noise Gate mais eficiente.
 
 ---
 
-# 🟤 Gate
+# 🟠 Compressor (dbx)
 
 | Parâmetro | Valor |
 |-----------|------:|
-| Threshold | **-50 dB** |
-| Attack | **5 ms** |
-| Hold | **100 ms** |
-| Release | **150 ms** |
+| Threshold | OFF |
+| Ratio | — |
+| Attack | — |
+| Release | — |
+| Makeup Gain | — |
+| Knee | — |
 
-Ajuda a reduzir ruídos provenientes dos pedais quando a guitarra não está sendo tocada.
+### Objetivo
 
----
+Normalmente não utilizar compressor na Ui24R.
 
-# 🎚️ Fader
+A compressão já deve ser realizada na pedaleira.
 
-Iniciar em:
-
-**-2 dB**
-
-Ajustar conforme a necessidade da mixagem.
+Somente habilitar se o guitarrista utilizar presets totalmente limpos.
 
 ---
 
-# Pan
+# 🎚️ AUX Sends
 
-Centro.
+## PA
+
+Enviar normalmente para o LR.
+
+---
+
+## Monitor
+
+| Fonte | Nível |
+|--------|------:|
+| Guitarra | **0 dB** |
+| Voz Principal | **-4 dB** |
+| Violão | **-6 dB** |
+| Teclado | **-8 dB** |
+| Baixo | **-10 dB** |
+| Cajón | **-10 dB** |
+
+---
+
+# ✨ FX
+
+## Reverb
+
+OFF
+
+## Delay
+
+OFF
+
+A pedaleira deve fornecer todos os efeitos.
+
+Não duplicar efeitos na Ui24R.
+
+---
+
+# Característica Sonora
+
+Este preset busca uma guitarra:
+
+- limpa;
+- definida;
+- presente;
+- sem excesso de graves;
+- sem competir com os vocais;
+- excelente para solos;
+- excelente para riffs;
+- excelente para ambiências.
+
+---
+
+# Ajustes Finais
+
+Durante a passagem de som:
+
+- Ajustar o Gain para picos entre **-12 dB** e **-6 dB**.
+- Manter o Fader em **0 dB**.
+- Balancear o volume utilizando apenas o fader.
+- Evitar equalizações exageradas na mesa.
+- Caso o timbre esteja muito fechado, aumentar levemente a **🟣 Banda 3 (2,8 kHz)**.
+- Caso fique muito brilhante, reduzir primeiro a **🟡 Banda 4 (4,8 kHz)**.
 
 ---
 
 # Observações
 
-- Preset desenvolvido para guitarras elétricas com processamento por pedais.
-- O timbre principal deve ser construído pelo guitarrista.
-- A Ui24R deve ser utilizada apenas para correções e encaixe na mixagem.
-- O HPF em **90 Hz** libera espaço para o baixo e o cajón.
-- O corte em **350 Hz** reduz o excesso de médios graves.
-- O reforço em **2,5 kHz** melhora a definição das levadas e dos solos.
-- O LPF em **10 kHz** ajuda a eliminar ruídos de alta frequência gerados pelos pedais.
-- Regular sempre o ganho antes do culto ou ensaio.
+Este preset foi desenvolvido para a:
+
+**Igreja Presbiteriana de Piracicaba**
+
+Considerando:
+
+- Soundcraft Ui24R;
+- PA Dommer;
+- 2 Subwoofers LL Audio;
+- 2 Monitores de palco;
+- Guitarra ligada por pedaleira;
+- Louvor congregacional.
+
+Foi otimizado para trabalhar em conjunto com:
+
+- Vocal Masculino;
+- Vocal Feminino;
+- Violão Martin;
+- Baixo CL-200 Ativo;
+- Teclado;
+- Cajón.

@@ -1,166 +1,281 @@
-# Preset - Microfone do Púlpito
+# Perfil de Canal — Microfone do Púlpito
 
-> Igreja Presbiteriana de Piracicaba
-
----
-
-# Instrumento
-
-- **Tipo:** Microfone Gooseneck (Pescoço de Ganso)
-- **Uso:** Pregação, leitura bíblica e avisos.
-- **Posição:** Púlpito
-
----
-
-# Posicionamento
-
-- Distância da boca:
-  - **10 a 15 cm**
-
-- Falar sempre de frente para a cápsula.
-
-- Evitar falar muito distante do microfone.
+> **Canal:** CH 7 (Púlpito)
+>
+> **Mesa:** Soundcraft Ui24R
+>
+> **Aplicação:** Pregação, leitura bíblica, avisos e estudos
+>
+> **Microfone:** Gooseneck (pescoço de ganso) condensador ligado diretamente à mesa
+>
+> **Sistema:** PA estéreo + Subwoofer + 2 monitores
+>
+> **Uso predominante:** Voz masculina
+>
+> **Uso feminino:** Eventual
+>
+> **Versão:** 2.0
 
 ---
 
-# Ui24R
+# Objetivo
 
-## 🟢 Gain
+Produzir uma voz:
 
-Regular para que os picos fiquem entre:
+- Muito natural
+- Extremamente inteligível
+- Confortável para ouvir por longos períodos
+- Sem graves excessivos
+- Sem plosivas ("P" e "B")
+- Sem sibilância
+- Com baixo risco de microfonia
 
-- **-18 dB**
-- **-12 dB**
-
-Nunca deixar clipar.
+Como normalmente apenas o pregador está falando, o objetivo não é fazer a voz "cortar" a banda, mas soar clara e agradável.
 
 ---
+
+# MIX
+
+## Gain
+
+Ajustar individualmente.
+
+Objetivo:
+
+Picos entre
+
+**-12 dBFS e -6 dBFS**
+
+Nunca compensar volume pelo ganho.
+
+---
+
+## Fader
+
+Ponto inicial:
+
+**0 dB (Unity)**
+
+O volume da pregação deve ser ajustado apenas pelo fader.
+
+---
+
+# Equalizador
 
 ## 🔵 HPF
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **100 Hz** |
-| Inclinação | **12 dB/oitava** |
+**100 Hz**
 
-Remove vibrações do púlpito, passos e graves desnecessários.
+Slope:
 
----
+**12 dB/Oct**
 
-# 🟡 Equalizador
-
-### 🟡 Banda 1 — Graves
-
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **150 Hz** |
-| Ganho | **0 dB** |
-| Q | **0,8** |
-
-Mantém a naturalidade da voz.
+Remove vibrações do púlpito, ruídos de piso e graves desnecessários, preservando a naturalidade da voz masculina.
 
 ---
 
-### 🟠 Banda 2 — Médios Graves
+## 🟢 Banda 1
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **280 Hz** |
-| Ganho | **-3 dB** |
-| Q | **1,2** |
+**180 Hz**
 
-Remove o efeito "caixa" e reduz o excesso de "P" e "B".
+**+1 dB**
 
----
+Q ≈ 0,9
 
-### 🟢 Banda 3 — Clareza
-
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **1,5 kHz** |
-| Ganho | **+1 dB** |
-| Q | **1,0** |
-
-Melhora a inteligibilidade da fala.
+Mantém corpo na voz sem aumentar as plosivas.
 
 ---
 
-### 🔴 Banda 4 — Presença
+## 🔴 Banda 2
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **3 kHz** |
-| Ganho | **+2,5 dB** |
-| Q | **1,0** |
+**300 Hz**
 
-Realça a articulação das palavras.
+**-2 dB**
 
----
+Q ≈ 1,3
 
-## 🟣 LPF
-
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **18 kHz** |
-
-Remove apenas frequências extremamente altas.
+Reduz efeito "caixa" e deixa a voz mais limpa.
 
 ---
 
-# 🟠 Compressor
+## 🟣 Banda 3
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Threshold | **-18 dB** |
-| Ratio | **2:1** |
-| Attack | **20 ms** |
-| Release | **120 ms** |
-| Makeup Gain | **0 dB** |
+**2,2 kHz**
 
-Objetivo: manter a voz uniforme sem perder naturalidade.
+**+2 dB**
+
+Q ≈ 1,0
+
+Melhora a articulação das palavras.
 
 ---
 
-# 🔷 De-Esser
+## 🟡 Banda 4
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **6,5 kHz** |
-| Threshold | **-30 dB** |
-| Ratio | **2:1** |
+**5,5 kHz**
 
-Suaviza sibilâncias ("S", "CH", "X").
+**+1 dB**
 
----
+Q ≈ 0,9
 
-# 🟤 Gate
-
-| Parâmetro | Valor |
-|-----------|------:|
-| Threshold | **-50 dB** |
-| Attack | **5 ms** |
-| Hold | **100 ms** |
-| Release | **150 ms** |
-
-Fecha o microfone quando ninguém está falando, reduzindo vazamentos e ajudando a prevenir microfonia.
+Acrescenta definição sem deixar a voz agressiva.
 
 ---
 
-# 🎚️ Fader
+## 🟠 LPF
 
-Manter próximo de:
+**18 kHz**
 
-**0 dB**
+Slope:
 
-Ajustar conforme a necessidade da mixagem.
+12 dB/Oct
+
+Remove ruídos muito altos sem alterar o timbre.
 
 ---
 
-# Observações
+# De-Esser
 
-- Preset desenvolvido especificamente para o microfone de púlpito da Igreja Presbiteriana de Piracicaba.
-- Prioriza inteligibilidade da voz e redução de microfonia.
-- A atenuação em **280 Hz** reduz o efeito "caixa" e melhora os sons plosivos ("P" e "B").
-- O reforço em **3 kHz** melhora a compreensão da fala mesmo nos últimos bancos da igreja.
-- O HPF em **100 Hz** elimina vibrações do púlpito e ruídos de baixa frequência.
-- Sempre ajustar o ganho antes do culto, pois cada pregador possui volume de voz diferente.
+**Frequência:**
+
+6,5 kHz
+
+Threshold:
+
+Ajustar conforme necessidade.
+
+Objetivo:
+
+Controlar:
+
+- S
+- CH
+- X
+
+Sem retirar a naturalidade da fala.
+
+---
+
+# Gate
+
+Threshold:
+
+**-50 dB**
+
+Attack:
+
+5 ms
+
+Hold:
+
+80 ms
+
+Release:
+
+220 ms
+
+Depth:
+
+18 dB
+
+Objetivo:
+
+Fechar o canal quando o púlpito estiver sem uso, reduzindo ruído ambiente, mas sem cortar o início das palavras.
+
+---
+
+# Compressor
+
+Threshold:
+
+**-20 dB**
+
+Ratio:
+
+**2,5:1**
+
+Attack:
+
+20 ms
+
+Release:
+
+180 ms
+
+Make-up Gain:
+
++1 dB
+
+Soft Knee:
+
+Ligado
+
+Objetivo:
+
+Nivelar diferenças entre fala baixa e alta sem dar aparência de voz "espremida".
+
+---
+
+# Auxiliares (Monitores)
+
+Normalmente:
+
+**Não enviar retorno ao púlpito.**
+
+Caso seja necessário para um pregador específico:
+
+Enviar apenas uma pequena quantidade da própria voz.
+
+Evitar retorno elevado para reduzir o risco de microfonia.
+
+---
+
+# FX
+
+Reverb:
+
+**Desligado**
+
+Delay:
+
+**Desligado**
+
+A palavra deve permanecer totalmente inteligível.
+
+---
+
+# Característica Sonora Esperada
+
+✔ Voz natural
+
+✔ Clara
+
+✔ Confortável
+
+✔ Excelente inteligibilidade
+
+✔ Pouca fadiga auditiva
+
+✔ Graves controlados
+
+✔ Sem excesso de brilho
+
+✔ Baixíssimo risco de microfonia
+
+✔ Boa compreensão mesmo no fundo do templo
+
+---
+
+# Observações Operacionais
+
+- Este canal normalmente é utilizado sozinho, sem a banda tocando.
+- Foi otimizado para voz masculina, que representa a maior parte do uso do púlpito.
+- Para vozes femininas, normalmente não é necessário alterar a equalização; apenas ajustar o ganho, se necessário.
+- Se houver plosivas ("P" e "B"), antes de alterar o EQ, verifique o posicionamento do microfone. O ideal é que ele fique cerca de **8 a 12 cm abaixo da boca**, apontado levemente para o queixo, evitando que o fluxo de ar atinja diretamente a cápsula.
+- Em caso de início de microfonia, reduzir primeiro o envio aos monitores e só depois realizar pequenos ajustes no EQ.
+
+---
+
+## Filosofia deste Perfil
+
+Este perfil prioriza uma **fala natural e confortável**, evitando equalizações exageradas. A intenção é que o pregador soe como sua própria voz, apenas mais clara, estável e inteligível para toda a igreja.

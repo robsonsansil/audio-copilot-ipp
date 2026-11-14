@@ -1,139 +1,290 @@
-# Preset - Vocal Feminino
+# Perfil de Canal — Voz Feminina (Banda)
 
-> Igreja Presbiteriana de Piracicaba
-
----
-
-# Equipamento
-
-- Tipo: Microfone dinâmico
-- Acessório: Espuma protetora instalada
-- Uso: Vocal principal ou backing vocal
-- Usuária: Voz feminina
+> **Instrumento:** Voz Feminina
+> **Canal:** CH 4 (ou conforme patch)
+> **Mesa:** Soundcraft Ui24R
+> **Aplicação:** Louvor congregacional
+> **Microfone:** Dinâmico com espuma
+> **Sistema:** PA estéreo + Subwoofer + 2 monitores de palco
+> **Versão:** 2.0 (Ajustada em campo)
 
 ---
 
-# Posicionamento
+# Objetivo
 
-- Distância da boca:
-  - **5 a 8 cm**
+Produzir uma voz feminina:
 
-- Cantar direcionando a voz para a cápsula.
+- Clara
+- Presente
+- Natural
+- Sem estridência
+- Sem embolar com teclado e violão
+- Com excelente inteligibilidade da letra
+- Baixo risco de microfonia
 
-- Evitar afastar o microfone durante a música.
-
----
-
-# Ui24R
-
-## 🟢 Gain
-
-Regular para que os picos fiquem entre:
-
-- **-18 dB**
-- **-12 dB**
-
-Caso necessário, aumentar aproximadamente **1 dB** em relação ao ajuste sem espuma.
-
-Nunca permitir clipagem.
+Este perfil foi ajustado ouvindo o sistema real da igreja e priorizando presença sem aumentar excessivamente o volume.
 
 ---
 
-## 🔵 HPF
+# MIX
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **120 Hz** |
-| Inclinação | **12 dB/oitava** |
+## Gain
 
----
+Regular individualmente.
 
-# 🟡 Equalizador
+Objetivo:
 
-### 🟡 Banda 1 — Graves
+Picos entre:
 
-| Frequência | Ganho | Q |
-|------------|-------|---|
-| **180 Hz** | **-1 dB** | **0,8** |
+-12 dBFS e -6 dBFS
 
----
+Nunca ajustar pelo valor numérico.
 
-### 🟠 Banda 2 — Médios Graves
-
-| Frequência | Ganho | Q |
-|------------|-------|---|
-| **320 Hz** | **-2 dB** | **1,2** |
+Sempre pelo medidor.
 
 ---
 
-### 🟢 Banda 3 — Clareza
+## Fader
 
-| Frequência | Ganho | Q |
-|------------|-------|---|
-| **2,8 kHz** | **+2 dB** | **1,0** |
+Ponto inicial:
 
----
+**0 dB (Unity)**
 
-### 🔴 Banda 4 — Brilho
-
-| Frequência | Ganho | Q |
-|------------|-------|---|
-| **5,5 kHz** | **+2 dB** | **0,8** |
+Ajustar somente durante a música.
 
 ---
 
-## 🟣 LPF
+# EQ
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **18 kHz** |
+## HPF 🔵
 
----
+**153 Hz**
+Slope:
 
-# 🟠 Compressor
+**12 dB/Oct**
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Threshold | **-20 dB** |
-| Ratio | **2,5:1** |
-| Attack | **12 ms** |
-| Release | **100 ms** |
-| Makeup Gain | **0 dB** |
+Remove graves desnecessários da voz.
 
 ---
 
-# 🔷 De-Esser
+## Banda 1 🟢
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | **6,8 kHz** |
-| Threshold | **-30 dB** |
-| Ratio | **2,5:1** |
+Frequência:
 
----
+**190 Hz**
 
-# 🟤 Gate
+Gain:
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Threshold | **-52 dB** |
-| Attack | **5 ms** |
-| Hold | **120 ms** |
-| Release | **180 ms** |
+**+2 dB**
+
+Q:
+
+≈1.0
+
+Adiciona corpo sem deixar a voz pesada.
 
 ---
 
-# 🎚️ Fader
+## Banda 2 🔴
 
-Iniciar em:
+Frequência:
+
+**700 Hz**
+
+Gain:
+
+**−1 dB**
+
+Q:
+
+≈1.3
+
+Reduz leve nasalidade.
+
+---
+
+## Banda 3 🟣
+
+Frequência:
+
+**2,3 kHz**
+
+Gain:
+
+**+2 dB**
+
+Q:
+
+≈1.0
+
+Principal região de presença.
+
+Faz a voz aparecer na mix sem precisar aumentar muito o volume.
+
+---
+
+## Banda 4 🟡
+
+Frequência:
+
+**8,5 kHz**
+
+Gain:
 
 **0 dB**
+
+Q:
+
+≈0.8
+
+Mantém brilho natural.
+
+Como o microfone utiliza espuma, normalmente não é necessário adicionar mais brilho.
+
+---
+
+## LPF 🟠
+
+18 kHz
+
+12 dB/Oct
+
+---
+
+# De-Esser 🟢
+
+Frequência:
+
+**9,5 kHz**
+
+Threshold:
+
+Ajustar conforme necessidade.
+
+Controla:
+
+- S
+- X
+- CH
+
+Mantendo a voz agradável.
+
+---
+
+# Gate
+
+Threshold:
+
+**−50 dB**
+
+Attack:
+
+5 ms
+
+Hold:
+
+60 ms
+
+Release:
+
+180 ms
+
+Depth:
+
+18 dB
+
+Objetivo:
+
+Eliminar vazamento de palco sem cortar o início das palavras.
+
+---
+
+# Compressor
+
+Threshold:
+
+−22 dB
+
+Ratio:
+
+3:1
+
+Attack:
+
+20 ms
+
+Release:
+
+180 ms
+
+Make-up Gain:
+
++2 dB
+
+Soft Knee:
+
+Ligado
+
+Objetivo:
+
+Controlar diferenças entre partes suaves e fortes mantendo naturalidade.
+
+---
+
+# Aux (Monitores)
+
+Enviar apenas o necessário.
+
+Prioridade:
+
+- Própria voz
+- Violão
+- Teclado
+- Pouco cajón
+- Pouco baixo
+
+Evitar excesso de retorno para reduzir microfonia.
+
+---
+
+# FX
+
+Reverb Hall pequeno
+
+Mix:
+
+10–15%
+
+Delay:
+
+Desligado
+
+---
+
+# Característica sonora esperada
+
+✔ Voz limpa
+
+✔ Presença na banda
+
+✔ Excelente inteligibilidade
+
+✔ Sem excesso de médios
+
+✔ Sem estridência
+
+✔ Natural
+
+✔ Boa definição mesmo com banda completa
+
+✔ Baixo risco de microfonia
 
 ---
 
 # Observações
 
-- Preset desenvolvido considerando o uso de espuma protetora.
-- Prioriza brilho, clareza e inteligibilidade.
-- Ajustar apenas o Gain para cada cantora.
-- Em caso de microfonia, reduzir primeiro o fader e verificar o posicionamento dos monitores antes de alterar a equalização.
+- Configuração validada em campo no sistema da igreja.
+- Esta curva oferece mais presença que a versão anterior, mantendo um timbre natural.
+- Indicada para a maioria das cantoras da equipe de louvor.
+- Caso a cantora possua voz muito aguda, reduzir levemente a Banda 3 (2,3 kHz) entre 0,5 e 1 dB.
+- Ajustar o ganho sempre pelo nível de entrada, nunca para compensar volume na mix.

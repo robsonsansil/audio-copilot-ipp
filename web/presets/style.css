@@ -58,7 +58,6 @@ body{
 body{
 
     display:flex;
-
     flex-direction:column;
 
 }
@@ -81,7 +80,7 @@ body{
 
     align-items:center;
 
-    padding:0 20px;
+    padding:0 28px;
 
     box-shadow:var(--shadow);
 
@@ -93,13 +92,13 @@ body{
 
     align-items:center;
 
-    gap:15px;
+    gap:22px;
 
 }
 
 .logo{
 
-    width:54px;
+    width:180px;
 
     height:auto;
 
@@ -107,9 +106,11 @@ body{
 
 .brand h1{
 
-    font-size:32px;
+    font-size:28px;
 
     font-weight:700;
+
+    line-height:1.1;
 
 }
 
@@ -117,7 +118,7 @@ body{
 
     color:#d1d5db;
 
-    font-size:14px;
+    font-size:15px;
 
 }
 
@@ -131,39 +132,81 @@ body{
 
 }
 
-#searchInput{
+/* ==========================================================
+   CAMPO DE BUSCA
+========================================================== */
 
-    width:260px;
+#search{
 
-    padding:10px 14px;
+    width:360px;
+
+    height:44px;
+
+    padding:0 16px;
 
     border:none;
 
-    border-radius:8px;
+    border-radius:10px;
 
     outline:none;
 
-    font-size:14px;
+    background:#ffffff;
+
+    color:#1f2937;
+
+    font-size:15px;
+
+    transition:all .20s ease;
+
+    box-shadow:0 1px 3px rgba(0,0,0,.12);
 
 }
 
-#themeButton{
+#search::placeholder{
 
-    width:42px;
+    color:#9ca3af;
 
-    height:42px;
+}
+
+#search:focus{
+
+    box-shadow:
+        0 0 0 3px rgba(0,188,212,.25),
+        0 2px 8px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================================
+   BOTÃO DO TEMA
+========================================================== */
+
+#theme-toggle{
+
+    width:46px;
+
+    height:44px;
 
     border:none;
 
-    border-radius:8px;
+    border-radius:10px;
 
     cursor:pointer;
 
-    font-size:18px;
+    font-size:20px;
 
     background:#374151;
 
     color:white;
+
+    transition:.2s;
+
+}
+
+#theme-toggle:hover{
+
+    background:#4b5563;
+
+    transform:translateY(-1px);
 
 }
 
@@ -345,16 +388,38 @@ body.dark #viewer{
 
 }
 
-body.dark #searchInput{
+body.dark #search{
 
     background:#374151;
 
     color:white;
 
+    box-shadow:0 1px 3px rgba(0,0,0,.35);
+
 }
 
-body.dark #searchInput::placeholder{
+body.dark #search::placeholder{
 
     color:#cbd5e1;
+
+}
+
+body.dark #search:focus{
+
+    box-shadow:
+        0 0 0 3px rgba(0,188,212,.30),
+        0 2px 8px rgba(0,0,0,.40);
+
+}
+
+body.dark #theme-toggle{
+
+    background:#334155;
+
+}
+
+body.dark #theme-toggle:hover{
+
+    background:#475569;
 
 }

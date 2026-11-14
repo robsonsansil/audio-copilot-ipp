@@ -98,7 +98,7 @@ body{
 
 .logo{
 
-    width:180px;
+    width:200px;
 
     max-width:100%;
 
@@ -132,6 +132,26 @@ body{
 .menu-toggle:hover{
 
     background:#4b5563;
+
+}
+
+.overlay{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    z-index:90;
+
+}
+
+.overlay.show{
+
+    display:block;
 
 }
 
@@ -539,15 +559,38 @@ body.dark #theme-toggle:hover{
 
     }
 
-    .sidebar{
+.sidebar{
 
-        width:100%;
+    position:fixed;
 
-        border-right:none;
+    top:0;
 
-        border-bottom:1px solid var(--border);
+    left:-280px;
 
-    }
+    width:280px;
+
+    height:100vh;
+
+    background:var(--surface);
+
+    border-right:1px solid var(--border);
+
+    border-bottom:none;
+
+    z-index:100;
+
+    overflow:auto;
+
+    transition:left .30s ease;
+
+    box-shadow:4px 0 18px rgba(0,0,0,.25);
+
+}
+.sidebar.open{
+
+    left:0;
+
+}
 
 }
 
@@ -555,17 +598,19 @@ body.dark #theme-toggle:hover{
 
     .logo{
 
-        width:130px;
+        width:100px;
 
     }
 
-    .brand{
+   .brand{
 
-        flex-direction:column;
+    flex-direction:row;
 
-        text-align:center;
+    justify-content:center;
 
-    }
+    align-items:center;
+
+}
 
     .top-actions{
 

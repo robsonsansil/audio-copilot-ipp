@@ -1,0 +1,360 @@
+/* ==========================================================
+   Audio Copilot IPP
+   Biblioteca Oficial de Presets
+========================================================== */
+
+/* ---------- Variáveis ---------- */
+
+:root{
+
+    --primary:#1f2937;
+    --primary-light:#374151;
+
+    --background:#eef2f7;
+    --surface:#ffffff;
+
+    --border:#d8dee8;
+
+    --text:#1f2937;
+    --text-light:#6b7280;
+
+    --accent:#00bcd4;
+
+    --hover:#f5f7fa;
+
+    --shadow:0 3px 10px rgba(0,0,0,.08);
+
+    --radius:10px;
+
+}
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+
+    height:100%;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+}
+
+/* ---------- Página ---------- */
+
+body{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.topbar{
+
+    height:72px;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo{
+
+    width:54px;
+
+    height:auto;
+
+}
+
+.brand h1{
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+.brand p{
+
+    color:#d1d5db;
+
+    font-size:14px;
+
+}
+
+.topbar-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+#searchInput{
+
+    width:260px;
+
+    padding:10px 14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:14px;
+
+}
+
+#themeButton{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    background:#374151;
+
+    color:white;
+
+}
+
+/* ==========================================================
+   LAYOUT
+========================================================== */
+
+.layout{
+
+    flex:1;
+
+    display:flex;
+
+}
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.sidebar{
+
+    width:260px;
+
+    background:white;
+
+    border-right:1px solid var(--border);
+
+    padding:20px;
+
+    overflow:auto;
+
+}
+
+.sidebar h2{
+
+    margin-bottom:20px;
+
+    font-size:26px;
+
+}
+
+.sidebar nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.sidebar button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    text-align:left;
+
+    padding:10px 12px;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    transition:.2s;
+
+}
+
+.sidebar button:hover{
+
+    background:var(--hover);
+
+}
+
+.sidebar button.active{
+
+    background:#dff6ff;
+
+    color:#0c4a6e;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   CONTEÚDO
+========================================================== */
+
+.content{
+
+    flex:1;
+
+    padding:30px;
+
+    overflow:auto;
+
+}
+
+#viewer{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    padding:35px;
+
+    box-shadow:var(--shadow);
+
+    min-height:600px;
+
+}
+
+#viewer h1{
+
+    margin-bottom:18px;
+
+}
+
+#viewer p{
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   RODAPÉ
+========================================================== */
+
+footer{
+
+    background:var(--primary);
+
+    color:white;
+
+    text-align:center;
+
+    padding:12px;
+
+    font-size:13px;
+
+}
+
+/* ==========================================================
+   TEMA ESCURO
+========================================================== */
+
+body.dark{
+
+    --background:#111827;
+
+    --surface:#1f2937;
+
+    --primary:#0f172a;
+
+    --primary-light:#334155;
+
+    --border:#374151;
+
+    --text:#f3f4f6;
+
+    --text-light:#d1d5db;
+
+    --hover:#334155;
+
+}
+
+body.dark .sidebar{
+
+    background:var(--surface);
+
+}
+
+body.dark #viewer{
+
+    background:var(--surface);
+
+}
+
+body.dark #searchInput{
+
+    background:#374151;
+
+    color:white;
+
+}
+
+body.dark #searchInput::placeholder{
+
+    color:#cbd5e1;
+
+}

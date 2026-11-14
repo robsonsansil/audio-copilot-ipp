@@ -1,4 +1,4 @@
-# Preset — Vocal Feminina
+# Preset — Vocal Feminino
 
 > **Instrumento:** Voz Feminina
 > **Canal:** CH 4 (ou conforme patch)

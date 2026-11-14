@@ -1,4 +1,4 @@
-# Preset — Violão Yamaha APX-6A
+# Preset — Violão Yamaha
 
 Categoria: Instrumentos
 

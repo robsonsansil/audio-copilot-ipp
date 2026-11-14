@@ -1,4 +1,4 @@
-# Perfil de Canal — Voz Feminina (Banda)
+# Perfil de Canal — Voz Feminina
 
 > **Instrumento:** Voz Feminina
 > **Canal:** CH 4 (ou conforme patch)

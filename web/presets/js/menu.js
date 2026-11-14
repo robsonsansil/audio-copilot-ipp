@@ -7,7 +7,7 @@
 ==========================================================
 */
 
-function carregarMenu(lista = PRESETS) {
+function carregarMenu(lista = Object.values(DATABASE)) {
 
     const menu = document.getElementById("sidebar");
 
@@ -47,7 +47,9 @@ function carregarMenu(lista = PRESETS) {
             const botao = document.createElement("button");
 
             botao.className = "menu-item";
-            botao.textContent = preset.nome;
+            botao.textContent = (preset.titulo || "")
+    .replace(/^Preset\s*[–—-]\s*/i, "")
+    .replace(/^Perfil de Canal\s*[–—-]\s*/i, "");
 
             botao.onclick = () => {
 

@@ -1,4 +1,4 @@
-# Preset — Baixo CL-200 (Ativo 9V)
+# Preset — Baixo CL-200
 
 Categoria: Cordas
 Mesa: Soundcraft Ui24R

@@ -35,19 +35,19 @@ function pesquisarPresets() {
 
     }
 
-    const resultado = PRESETS.filter(preset => {
+    const resultado = Object.values(DATABASE).filter(preset => {
 
         return (
 
-            preset.nome.toLowerCase().includes(texto)
+            (preset.titulo || "").toLowerCase().includes(texto)
 
             ||
 
-            preset.categoria.toLowerCase().includes(texto)
+            (preset.categoria || "").toLowerCase().includes(texto)
 
             ||
 
-            preset.descricao.toLowerCase().includes(texto)
+            (preset.markdown || "").toLowerCase().includes(texto)
 
         );
 

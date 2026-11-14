@@ -9,12 +9,9 @@
 
 function abrirPreset(id) {
 
-    const viewer = document.getElementById("viewer");
+    const preset = DATABASE[id];
 
-    // procura no banco gerado pelo Python
-    const markdown = DATABASE[id];
-
-    if (!markdown) {
+    if (!preset) {
 
         mostrarErro("Preset não encontrado.");
 
@@ -22,7 +19,7 @@ function abrirPreset(id) {
 
     }
 
-    renderizarMarkdown(markdown);
+    renderizarMarkdown(preset.markdown);
 
 }
 

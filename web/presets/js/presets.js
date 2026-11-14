@@ -70,32 +70,17 @@ const PRESETS = [
     },
 
     {
+    id: "pulpito",
 
-        id: "pulpito-masculino",
+    categoria: "Vozes",
 
-        categoria: "Vozes",
+    nome: "Púlpito",
 
-        nome: "Púlpito Masculino",
+    descricao: "Preset para pregação no púlpito.",
 
-        descricao: "Preset para voz masculina no púlpito.",
+    arquivo: "../../docs/presets/voz/pulpito.md"
 
-        arquivo: "../../docs/presets/voz/pulpito-masculino.md"
-
-    },
-
-    {
-
-        id: "pulpito-feminino",
-
-        categoria: "Vozes",
-
-        nome: "Púlpito Feminino",
-
-        descricao: "Preset para voz feminina no púlpito.",
-
-        arquivo: "../../docs/presets/voz/pulpito-feminino.md"
-
-    },
+},
 
     {
 

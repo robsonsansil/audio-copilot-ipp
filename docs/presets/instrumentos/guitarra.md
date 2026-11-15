@@ -1,4 +1,4 @@
-# Preset — Guitarra (Pedaleira)
+# Preset — Guitarra
 
 Categoria: Instrumentos
 Mesa: Soundcraft Ui24R

@@ -1,117 +1,207 @@
-# Preset - Playback (MP3 / Hinos)
+# Perfil de Canal — Playback (MP3 / Hinos)
 
-Sistema de reprodução de hinos e músicas da Igreja Presbiteriana de Piracicaba.
-
----
-
-# Equipamento
-
-- **Fonte:** Notebook, Celular ou Tablet
-- **Ligação:** DI Box Estéreo → Ui24R
-- **Saída:** P2 Estéreo ou Interface USB
-- **Uso:** Reprodução de hinos congregacionais, playback e trilhas de apoio
-
----
-
-# Conexão Recomendada
-
-```
-Notebook / Celular
-        │
-        ▼
- DI Box Estéreo
-        │
-        ▼
- Ui24R (Canal L / Canal R)
-```
+> **Canal:** Stereo Playback (L/R)
+>
+> **Mesa:** Soundcraft Ui24R
+>
+> **Aplicação:** Reprodução de hinos, playbacks, trilhas e músicas especiais
+>
+> **Fonte:** Notebook, Celular, Tablet ou Interface USB
+>
+> **Ligação:** DI Box Estéreo → Ui24R
+>
+> **Sistema:** PA estéreo + Subwoofer + 2 Monitores
+>
+> **Versão:** 2.0
 
 ---
 
-# Ui24R
+# Objetivo
+
+Produzir uma reprodução:
+
+- Fiel ao arquivo original
+- Com excelente definição
+- Graves firmes e controlados
+- Boa presença vocal
+- Sem distorção
+- Sem clipagem
+- Compatível com hinos congregacionais e playbacks
+
+---
+
+# MIX
 
 ## 🟢 Gain
 
-Regular para que os picos fiquem entre:
+Regular individualmente cada canal.
 
-- **-18 dB**
-- **-12 dB**
+Objetivo:
 
-Evite clipagem.
+Picos entre
 
----
+**-18 dBFS e -12 dBFS**
 
-## 🔵 HPF
+Evitar clipagem.
 
-| Parâmetro | Valor |
-|-----------|------:|
-| Frequência | 40 Hz |
-| Inclinação | 12 dB/oitava |
-
----
-
-## 🟡 Equalizador
-
-### Banda 1 — Sub Graves
-
-| Frequência | Ganho | Q |
-|------------|-------:|--:|
-| 60 Hz | -2 dB | 0,8 |
-
----
-
-### Banda 2 — Graves
-
-| Frequência | Ganho | Q |
-|------------|-------:|--:|
-| 250 Hz | -2 dB | 1,0 |
-
----
-
-### Banda 3 — Presença
-
-| Frequência | Ganho | Q |
-|------------|-------:|--:|
-| 3 kHz | +1 dB | 1,0 |
-
----
-
-### Banda 4 — Brilho
-
-| Frequência | Ganho | Q |
-|------------|-------:|--:|
-| 10 kHz | +2 dB | 0,8 |
-
----
-
-## 🟠 Compressor
-
-| Parâmetro | Valor |
-|-----------|------:|
-| Threshold | -18 dB |
-| Ratio | 2:1 |
-| Attack | 20 ms |
-| Release | 120 ms |
-| Makeup Gain | 0 dB |
-
----
-
-## 🔷 De-Esser
-
-**Desativado**
-
----
-
-## 🟤 Gate
-
-**Desativado**
+Nunca utilizar o Gain para compensar arquivos gravados com volume muito baixo.
 
 ---
 
 ## ⚫ Fader
 
-Iniciar em:
+Ponto inicial:
 
-**0 dB**
+**0 dB (Unity)**
+
+Ajustar o volume da reprodução preferencialmente pelo Fader.
+
+---
+
+# Equalizador
+
+## 🔵 HPF
+
+**40 Hz**
+
+Slope:
+
+**12 dB/Oct**
+
+Remove frequências extremamente baixas sem alterar a musicalidade.
+
+---
+
+## 🟢 Banda 1
+
+**60 Hz**
+
+**-2 dB**
+
+Q ≈ 0,8
+
+Controla o excesso de subgraves.
+
+---
+
+## 🔴 Banda 2
+
+**250 Hz**
+
+**-2 dB**
+
+Q ≈ 1,0
+
+Reduz acúmulo de graves e deixa a mix mais limpa.
+
+---
+
+## 🟣 Banda 3
+
+**3 kHz**
+
+**+1 dB**
+
+Q ≈ 1,0
+
+Melhora a definição das vozes e instrumentos principais.
+
+---
+
+## 🟡 Banda 4
+
+**10 kHz**
+
+**+2 dB**
+
+Q ≈ 0,8
+
+Acrescenta brilho e sensação de abertura.
+
+---
+
+## 🟠 LPF
+
+**20 kHz**
+
+Slope:
+
+12 dB/Oct
+
+Mantém toda a faixa audível sem alterar o conteúdo musical.
+
+---
+
+# De-Esser
+
+**Desativado**
+
+Não aplicável para reprodução de áudio masterizado.
+
+---
+
+# Gate
+
+**Desativado**
+
+Playback deve permanecer contínuo, sem cortes.
+
+---
+
+# Compressor
+
+Threshold:
+
+**-12 dB**
+
+Ratio:
+
+**2:1**
+
+Attack:
+
+20 ms
+
+Release:
+
+120 ms
+
+Make-up Gain:
+
+0 dB
+
+Soft Knee:
+
+Ligado
+
+Objetivo:
+
+Apenas controlar eventuais picos sem alterar a dinâmica natural da gravação.
+
+---
+
+# Auxiliares (Monitores)
+
+Enviar conforme necessidade dos músicos.
+
+Normalmente:
+
+- Playback presente nos dois monitores.
+- Ajustar individualmente conforme a necessidade da equipe de louvor.
+
+---
+
+# FX
+
+Reverb:
+
+**Desligado**
+
+Delay:
+
+**Desligado**
+
+O arquivo já possui sua própria ambiência e masterização.
 
 ---
 
@@ -126,14 +216,33 @@ Caso utilize dois canais:
 
 ---
 
-# Observações
+# Característica Sonora Esperada
 
-- Ajustar o volume do notebook ou celular para aproximadamente **80%** antes de regular o ganho.
-- Utilizar preferencialmente arquivos em **320 kbps** ou superior.
-- Evitar equalizadores do sistema operacional, Spotify ou celular.
-- Caso o áudio apresente distorção, reduzir primeiro o volume da fonte antes de diminuir o ganho da Ui24R.
-- Sempre verificar se os dois canais (L/R) estão com o mesmo ganho e fader.
-- Nunca utilizar ganho para compensar volume baixo do arquivo.
+✔ Reprodução fiel ao arquivo original
+
+✔ Graves controlados
+
+✔ Excelente definição
+
+✔ Boa presença vocal
+
+✔ Sem distorção
+
+✔ Excelente equilíbrio tonal
+
+✔ Alta inteligibilidade
+
+---
+
+# Observações Operacionais
+
+- Ajustar o volume do notebook, celular ou tablet para aproximadamente **80%** antes de regular o Gain.
+- Preferir arquivos em **320 kbps**, WAV ou FLAC.
+- Evitar equalizadores do sistema operacional, Spotify ou do próprio dispositivo.
+- Caso haja distorção, reduzir primeiro o volume da fonte antes de diminuir o Gain da Ui24R.
+- Verificar se os canais L e R possuem exatamente o mesmo Gain e Fader.
+- Nunca utilizar o Gain para compensar diferenças de volume entre músicas.
+- Se houver grande diferença entre faixas, ajustar apenas o Fader durante a reprodução.
 
 ---
 
@@ -149,12 +258,10 @@ Caso utilize dois canais:
 
 ✅ Fundo musical
 
-✅ Trilhas para eventos da igreja
+✅ Trilhas para eventos
 
 ---
 
-# Versão
+# Filosofia deste Perfil
 
-**Audio Copilot IPP**
-
-Preset oficial da Igreja Presbiteriana de Piracicaba.
+Este perfil prioriza a **fidelidade ao áudio original**, realizando apenas pequenas correções para melhor adaptação ao sistema de sonorização da Igreja Presbiteriana de Piracicaba. A intenção é que o público ouça a gravação da forma mais natural possível, com equilíbrio tonal, boa definição e sem processamento excessivo.

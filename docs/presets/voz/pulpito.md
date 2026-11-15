@@ -172,7 +172,7 @@ Hold:
 
 Release:
 
-220 ms
+150 ms
 
 Depth:
 
@@ -188,23 +188,23 @@ Fechar o canal quando o púlpito estiver sem uso, reduzindo ruído ambiente, mas
 
 Threshold:
 
-**-20 dB**
+**-18 dB**
 
 Ratio:
 
-**2,5:1**
+**2:1**
 
 Attack:
 
-20 ms
+12 ms
 
 Release:
 
-180 ms
+120 ms
 
 Make-up Gain:
 
-+1 dB
+0 dB
 
 Soft Knee:
 

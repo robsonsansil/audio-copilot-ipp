@@ -14,7 +14,9 @@
 >
 > **Uso feminino:** Eventual
 >
-> **Versão:** 2.0
+> **Versão:** 2.1
+>
+> **Status:** ✅ Validado em campo
 
 ---
 
@@ -26,11 +28,11 @@ Produzir uma voz:
 - Extremamente inteligível
 - Confortável para ouvir por longos períodos
 - Sem graves excessivos
-- Sem plosivas ("P" e "B")
+- Com plosivas ("P" e "B") controladas
 - Sem sibilância
 - Com baixo risco de microfonia
 
-Como normalmente apenas o pregador está falando, o objetivo não é fazer a voz "cortar" a banda, mas soar clara e agradável.
+Como normalmente apenas o pregador está falando, o objetivo não é fazer a voz "cortar" a banda, mas soar clara, equilibrada e agradável durante toda a mensagem.
 
 ---
 
@@ -42,9 +44,7 @@ Ajustar individualmente.
 
 Objetivo:
 
-Picos entre
-
-**-12 dBFS e -6 dBFS**
+**Picos entre -12 dBFS e -6 dBFS.**
 
 Nunca compensar volume pelo ganho.
 
@@ -64,7 +64,7 @@ O volume da pregação deve ser ajustado apenas pelo fader.
 
 ## 🔵 HPF
 
-**100 Hz**
+**130 Hz**
 
 Slope:
 
@@ -76,49 +76,49 @@ Remove vibrações do púlpito, ruídos de piso e graves desnecessários, preser
 
 ## 🟢 Banda 1
 
-**180 Hz**
+**140 Hz**
 
-**+1 dB**
+**-1,5 dB**
 
-Q ≈ 0,9
+Q ≈ 1,2
 
-Mantém corpo na voz sem aumentar as plosivas.
+Controla o excesso de graves da voz, preservando sua naturalidade e reduzindo a energia das plosivas.
 
 ---
 
 ## 🔴 Banda 2
 
-**300 Hz**
+**140 Hz**
 
-**-2 dB**
+**-3 dB**
 
-Q ≈ 1,3
+Q ≈ 3,5
 
-Reduz efeito "caixa" e deixa a voz mais limpa.
+Atenua a região mais crítica das plosivas ("P" e "B"), reduzindo seu impacto sem comprometer a naturalidade da voz.
 
 ---
 
 ## 🟣 Banda 3
 
-**2,2 kHz**
+**1,8 kHz**
 
-**+2 dB**
+**+1 dB**
 
 Q ≈ 1,0
 
-Melhora a articulação das palavras.
+Melhora a articulação das palavras e aumenta a inteligibilidade da fala.
 
 ---
 
 ## 🟡 Banda 4
 
-**5,5 kHz**
+**3,5 kHz**
 
-**+1 dB**
+**+2 dB**
 
-Q ≈ 0,9
+Q ≈ 1,0
 
-Acrescenta definição sem deixar a voz agressiva.
+Acrescenta definição e clareza sem deixar a voz agressiva.
 
 ---
 
@@ -128,9 +128,9 @@ Acrescenta definição sem deixar a voz agressiva.
 
 Slope:
 
-12 dB/Oct
+**12 dB/Oct**
 
-Remove ruídos muito altos sem alterar o timbre.
+Remove ruídos muito altos sem alterar o timbre da voz.
 
 ---
 
@@ -140,7 +140,7 @@ Remove ruídos muito altos sem alterar o timbre.
 
 6,5 kHz
 
-Threshold:
+**Threshold:**
 
 Ajustar conforme necessidade.
 
@@ -158,61 +158,63 @@ Sem retirar a naturalidade da fala.
 
 # Gate
 
-Threshold:
+**Threshold:**
 
 **-50 dB**
 
-Attack:
+**Attack:**
 
 5 ms
 
-Hold:
+**Hold:**
 
 80 ms
 
-Release:
+**Release:**
 
-150 ms
+220 ms
 
-Depth:
+**Depth:**
 
 18 dB
 
-Objetivo:
+### Objetivo
 
-Fechar o canal quando o púlpito estiver sem uso, reduzindo ruído ambiente, mas sem cortar o início das palavras.
+Fechar o canal quando o púlpito estiver sem uso, reduzindo o ruído ambiente, mas sem cortar o início das palavras.
 
 ---
 
 # Compressor
 
-Threshold:
+**Threshold:**
 
-**-18 dB**
+**-20 dB**
 
-Ratio:
+**Ratio:**
 
-**2:1**
+**3:1**
 
-Attack:
+**Attack:**
 
-12 ms
+25 ms
 
-Release:
+**Release:**
 
-120 ms
+150 ms
 
-Make-up Gain:
+**Make-up Gain:**
 
 0 dB
 
-Soft Knee:
+**Soft Knee:**
 
 Ligado
 
-Objetivo:
+### Objetivo
 
-Nivelar diferenças entre fala baixa e alta sem dar aparência de voz "espremida".
+Nivelar as diferenças entre fala baixa e alta, mantendo a voz natural, confortável e consistente.
+
+O ataque de **25 ms** preserva a articulação natural da fala e ajuda a suavizar as plosivas sem produzir uma sensação de voz excessivamente comprimida.
 
 ---
 
@@ -226,21 +228,21 @@ Caso seja necessário para um pregador específico:
 
 Enviar apenas uma pequena quantidade da própria voz.
 
-Evitar retorno elevado para reduzir o risco de microfonia.
+Evitar níveis elevados de retorno para reduzir o risco de microfonia.
 
 ---
 
 # FX
 
-Reverb:
+**Reverb:**
 
 **Desligado**
 
-Delay:
+**Delay:**
 
 **Desligado**
 
-A palavra deve permanecer totalmente inteligível.
+A Palavra deve permanecer totalmente inteligível.
 
 ---
 
@@ -258,6 +260,8 @@ A palavra deve permanecer totalmente inteligível.
 
 ✔ Graves controlados
 
+✔ Plosivas reduzidas
+
 ✔ Sem excesso de brilho
 
 ✔ Baixíssimo risco de microfonia
@@ -272,10 +276,32 @@ A palavra deve permanecer totalmente inteligível.
 - Foi otimizado para voz masculina, que representa a maior parte do uso do púlpito.
 - Para vozes femininas, normalmente não é necessário alterar a equalização; apenas ajustar o ganho, se necessário.
 - Se houver plosivas ("P" e "B"), antes de alterar o EQ, verifique o posicionamento do microfone. O ideal é que ele fique cerca de **8 a 12 cm abaixo da boca**, apontado levemente para o queixo, evitando que o fluxo de ar atinja diretamente a cápsula.
-- Em caso de início de microfonia, reduzir primeiro o envio aos monitores e só depois realizar pequenos ajustes no EQ.
+- Caso persistam plosivas ("P" e "B"), priorizar o reposicionamento do microfone antes de realizar novos cortes no equalizador. Pequenos ajustes de altura, distância e inclinação costumam produzir resultados superiores a equalizações mais agressivas.
+- Em caso de início de microfonia, reduzir primeiro o envio aos monitores e somente depois realizar pequenos ajustes no equalizador.
 
 ---
 
-## Filosofia deste Perfil
+# Filosofia deste Perfil
 
-Este perfil prioriza uma **fala natural e confortável**, evitando equalizações exageradas. A intenção é que o pregador soe como sua própria voz, apenas mais clara, estável e inteligível para toda a igreja.
+Este perfil foi desenvolvido e refinado em testes práticos durante cultos na Igreja Presbiteriana de Piracicaba.
+
+A filosofia deste preset é priorizar uma **fala natural, confortável e altamente inteligível**, evitando equalizações e compressões exageradas.
+
+O objetivo é que o pregador soe como sua própria voz, apenas mais clara, estável e agradável para toda a congregação, preservando a naturalidade e reduzindo a fadiga auditiva.
+
+---
+
+# Histórico de Revisões
+
+## Versão 2.1
+
+- HPF ajustado para **130 Hz**.
+- Equalização refinada para redução das plosivas ("P" e "B").
+- Compressor ajustado para **Ratio 3:1**, **Attack 25 ms** e **Release 150 ms**.
+- Preset validado em testes práticos durante cultos.
+
+## Versão 2.0
+
+- Revisão completa do preset para voz de púlpito.
+- Otimização para voz masculina em microfone gooseneck.
+- Foco em inteligibilidade, conforto auditivo e baixo risco de microfonia.
